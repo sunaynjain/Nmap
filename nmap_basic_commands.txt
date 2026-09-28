@@ -1,0 +1,48 @@
+NMAP BASIC COMMANDS
+
+1. Check Nmap Version
+Command:
+nmap --version
+
+Info:
+Displays the installed Nmap version and basic build information.
+
+
+2. Basic Network Scan
+Command:
+nmap scanme.nmap.org
+
+Info:
+Scans the target and shows open ports and basic port information.
+
+
+3. Scan Specific Ports
+Command:
+nmap -p 22,80,443 scanme.nmap.org
+
+Info:
+Scans only the specified ports:
+22  -> SSH
+80  -> HTTP
+443 -> HTTPS
+
+
+4. Detect Services & Versions
+Command:
+nmap -sV scanme.nmap.org
+
+Info:
+Attempts to identify the services running on open ports and their versions.
+
+
+5. Scan All TCP Ports
+Command:
+nmap -p- scanme.nmap.org
+
+Info:
+Scans all TCP ports (1-65535) instead of Nmap's default port set.
+
+
+IMPORTANT:
+Practice only on systems you own or are explicitly authorized to scan.
+scanme.nmap.org is provided by the Nmap project specifically for testing Nmap.
